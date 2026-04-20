@@ -1,92 +1,72 @@
-🏡 Smart Cabin Price Predictor
+# Smart Cabin Price Predictor
 
 Final project for the Building AI course
 
-Summary
+## Summary
 
-An AI system that predicts cabin prices based on features like size, location, and amenities. It helps buyers and sellers estimate fair prices quickly using machine learning models trained on real estate data. (Building AI course project)
+An AI system that predicts cabin prices based on features like size, location, and amenities. It helps users estimate fair prices quickly using machine learning models trained on data. Building AI course project
 
-Background
+## Background
 
-Buying or selling property can be difficult because prices vary a lot depending on many factors. People often:
+Buying or selling cabins can be difficult because prices depend on many factors. People often:
+* overpay or underprice properties
+* do not understand what affects the price
+* rely on guesswork instead of data
 
-overpay or underprice properties
-lack reliable pricing tools
-depend on subjective opinions
+This problem is very common in real estate markets. My motivation is to make pricing easier and more accurate using AI.
 
-This problem is common in real estate markets worldwide.
+## How is it used?
 
-My motivation comes from seeing how confusing pricing can be, especially for people without experience. A simple AI tool could make decisions easier and fairer.
+Users enter cabin features such as:
+* size (m²)
+* distance to water
+* number of bathrooms
+* distance to neighbors
 
-How is it used?
+The system then predicts the price.
 
-Users input cabin features such as:
+Users:
+* buyers → to avoid overpaying
+* sellers → to set realistic prices
+* agents → as a support tool
 
-size (m²)
-distance to water
-number of bathrooms
-proximity to neighbors
-
-The system predicts a price instantly.
-
-Who uses it:
-
-buyers → to avoid overpaying
-sellers → to set realistic prices
-agents → as a support tool
-
-Example workflow:
-
-User enters cabin details
-AI processes input
-Predicted price is shown
-Data sources and AI methods
+## Data sources and AI methods
 
 Data sources:
-
-historical cabin sales data
-public real estate datasets
-synthetic/demo datasets (for prototype)
+* historical cabin price data
+* real estate datasets
 
 AI methods:
+* linear regression
+* neural networks
+* k-nearest neighbors
 
-Linear regression
-Neural networks
-k-nearest neighbors (KNN)
-
-Example (simple prediction idea):
+Example:
 
 price = model.predict(features)
-Challenges
 
-This project does NOT solve everything:
 
-predictions depend heavily on data quality
-unusual properties may be mispriced
-market changes over time
+## Challenges
+
+This project does not solve everything:
+* predictions depend on data quality
+* unusual cabins may be predicted incorrectly
+* market prices change over time
 
 Ethical considerations:
+* bias in data
+* fairness of predictions
 
-bias in training data
-transparency of predictions
-fairness in pricing
-What next?
+## What next?
 
 Future improvements:
+* better datasets
+* web or mobile app
+* image recognition of cabins
+* real-time market data
 
-add real-time market data
-build a web/app interface
-include images of cabins (computer vision)
-personalize predictions based on user preferences
+## Acknowledgments
 
-Needed:
-
-more data
-better models
-collaboration with real estate experts
-Acknowledgments
-Inspired by real estate pricing problems
-Based on concepts from the Elements of AI / Building AI course
-Uses ideas from open-source ML tools like:
-NumPy
-scikit-learn
+* Inspired by real estate pricing problems
+* Based on knowledge from the Elements of AI course
+* Uses concepts from NumPy and scikit-learn
